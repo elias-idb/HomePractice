@@ -25,7 +25,7 @@ async function testRun(){
     await driver.findElement(By.xpath("//input[@name='qty']")).sendKeys(2);
     await driver.sleep(2000);
     // await driver.findElement(By.xpath("//span[contains(text(),'ADD TO CART')]")).click();
-    await driver.findElement(By.xpath("//button[contains(.., 'ADD TO CART')]")).click();
+    await driver.findElement(By.xpath("//button[contains(.., 'ADD TO CART Detais')]")).click();
     await driver.sleep(2000);
     await driver.findElement(By.xpath("//a[@href='/cart' and contains(text(),'VIEW CART')]")).click();
     await driver.sleep(2000);
@@ -33,6 +33,6 @@ async function testRun(){
     await driver.sleep(1000);
 
     await driver.quit();
-    // Test repo
+    // Test repo file
 }
 testRun();
